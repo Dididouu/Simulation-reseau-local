@@ -1,0 +1,36 @@
+#pragma once
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include "machines.h"
+#define ERROR 1
+#define SUCCESS 0
+
+typedef struct arete
+{
+	machine *m1;
+	machine *m2;
+	size_t poids;
+} arete;
+
+typedef struct reseau
+{
+	size_t nb_machines;
+	machine *machines;
+	arete *aretes;
+	size_t aretes_capacite;
+	size_t nb_aretes;
+} reseau;
+
+void init_reseau(reseau *r);
+void deinit_reseau(reseau *r);
+
+void afficher(swtch* sw);
+int charger_reseau(const char* nom_fichier, reseau* g);
+void affichage_reseau(reseau *g);
+void affichage_tab_commutation(swtch *sw);
+
+int nb_voisin(machine *m, reseau *r);
+void tab_voisin(machine *m, machine *voisins[], reseau *r);
