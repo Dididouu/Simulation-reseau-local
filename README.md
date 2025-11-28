@@ -1,19 +1,30 @@
-# Simulation de Réseau Local en C (SAE2.3 - Réseaux)
+# Simulation d'un réseau Lan ![Statut](https://img.shields.io/badge/Statut-Terminé-green)
 
-## Description  
-Application en langage C permettant de modéliser et simuler le fonctionnement d’un réseau local à l’aide de structures de données (stations, switchs, trames Ethernet). Tentative de reproduire le comportement du protocole Ethernet et du protocole STP (Spanning Tree Protocol).
+![réseau](https://cabanisbrive.scenari-community.org/STIDD/Premiere/Sequence_03/Edp/Modelisation_Reseau_web/res/Reseau_switch.png)
 
-## Fonctionnalités  
-- Création de structures de données pour représenter :
-  - des **stations** (adresses MAC et IP)  
-  - des **switchs** (MAC, nombre de ports, priorité, table de commutation)  
-  - un **réseau local** sous forme de **graphe**  
-- Lecture et écriture d’un **fichier de configuration** décrivant l’architecture réseau  
-- Affichage détaillé des **adresses MAC/IP** et des **tables de commutation**  
-- Simulation de la **commutation de trames Ethernet** :
-  - représentation fidèle d’une trame  
-  - affichage des trames en format lisible et en hexadécimal  
-- Implémentation du **protocole STP** (Spanning Tree Protocol) :
-  - échanges automatiques de **BPDU** entre switchs  
-  - détermination des ports racines, désignés ou bloqués  
-  - convergence automatique du réseau sans boucle  
+## Description
+Dans le cadre de la fin du BUT1, nous devions developper une simulation d'un réseau LAN sur le terminal. Celui consiste à connecter plusieurs machines entre elles grâce au protocole STP à partir d'un fichier de configuration et d'envoyer des trames grâce au protocole Ethernet.
+
+## Technologie utilisées
+- Langage : C#
+- IDE : Visual Studio Code
+
+## Équipe
+- Nombre de développeurs : 2
+- Durée du projet : 4 semaines
+
+## Installation et exécution
+1. Cloner le dépôt :
+    ```bash
+    git clone https://github.com/mon-utilisateur/sae-simulation-reseau.git
+    cd SAE-reseaux
+2. Lancer le simulateur dans le terminal :
+   ```bash
+   make (nécessite gcc)
+   ./bin/main
+   ````
+## Fonctionnalités princiaples
+- Structures du réseau avec station et switch
+- Stoackage d'une architecture du réseau dans un fichier de configuration
+- Communication de trames Ethernet
+- Option d'ajout du protocole STP (Spanning Tree Protocol)
