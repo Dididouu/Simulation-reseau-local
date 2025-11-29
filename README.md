@@ -6,7 +6,7 @@
 Dans le cadre de la fin du BUT1, nous devions developper une simulation d'un réseau LAN sur le terminal. Celui consiste à connecter plusieurs machines entre elles grâce au protocole STP à partir d'un fichier de configuration et d'envoyer des trames grâce au protocole Ethernet.
 
 ## Technologie utilisées
-- Langage : C#
+- Langage : C
 - IDE : Visual Studio Code
 
 ## Équipe
