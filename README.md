@@ -16,7 +16,7 @@ Dans le cadre de la fin du BUT1, nous devions developper une simulation d'un ré
 ## Installation et exécution
 1. Cloner le dépôt :
     ```bash
-    git clone https://github.com/mon-utilisateur/sae-simulation-reseau.git
+    git clone https://github.com/Dididouu/Simulation-reseau-local.git
     cd SAE-reseaux
 2. Lancer le simulateur dans le terminal :
    ```bash
